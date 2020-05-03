@@ -267,9 +267,9 @@ const guess = (suspect) => {
 const checkMyGuess = (suspect) => {
   if (suspect === secret.name) {
     winOrLoseText.innerHTML = `YAY! Congrats <br>
-     – you won! <span role="image" aria-label="cheer">🙌</span>`
+     – you won! <span role="img" aria-label="cheer">🙌</span>`
   } else {
-    winOrLoseText.innerHTML = `Oh no! You guessed wrong. Game over! <span role="image" aria-label="angry">😤</span>`
+    winOrLoseText.innerHTML = `Oh no! You guessed wrong. Game over! <span role="img" aria-label="angry">😤</span>`
   }
   winOrLose.style.display = 'flex'
   board.style.display = 'none'
