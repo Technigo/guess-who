@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess Who?</title>
+  </head>
+  <body>
+    <aside class="question-section">
+      <button id="restart" class="outlined-button">RESTART</button>
+
+      <img
+        class="guess-who-icon"
+        src="images/guess-who-bubble.png"
+        alt="Guess Who"
+      />
+
+      <h1>Does the person have</h1>
+
+      <select id="questions">
+        <optgroup label="hair color">
+          <option value="brown">Brown hair</option>
+          <option value="yellow">Yellow hair</option>
+          <option value="hidden">Hidden hair</option>
+          <option value="black">Black hair</option>
+          <option value="grey">Grey hair</option>
+          <option value="orange">Orange hair</option>
+          <option value="purple">Purple hair</option>
+          <option value="white">White hair</option>
+        </optgroup>
+        <optgroup label="eye color">
+          <option value="brown">Brown eyes</option>
+          <option value="blue">Blue eyes</option>
+          <option value="green">Green eyes</option>
+          <option value="hidden">Hidden eyes</option>
+        </optgroup>
+        <optgroup label="accessories">
+          <option value="glasses">Wears glasses</option>
+          <option value="hat">Wears a hat</option>
+          <option value="smoke">Smokes</option>
+        </optgroup>
+      </select>
+
+      <button id="filter" class="filled-button">FIND OUT</button>
+    </aside>
+
+    <section class="board-wrapper">
+      <main class="game-board" id="board"></main>
+    </section>
+
+    <section id="winOrLose" class="win-or-lose-wrapper">
+      <div class="win-or-lose">
+        <img
+          class="guess-who-icon"
+          src="images/guess-who-bubble.png"
+          alt="Guess Who"
+        />
+        <h1 id="winOrLoseText"></h1>
+        <button id="playAgain" class="filled-button">PLAY AGAIN</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
